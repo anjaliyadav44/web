@@ -1,0 +1,166 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: rgba(214, 207, 207, 0.822);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #4d3bb4;
+  color: black;
+}
+/* Add this code to the style section */
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+/* Carousel images */
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Active image */
+.carousel img.active {
+  opacity: 1;
+}
+
+/* Main content */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main content header */
+.main h1 {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Main content cards */
+.card {
+  background-color: white;
+  width: calc(25% - 40px);
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Card image */
+.card img {
+  width: 100%;
+}
+
+/* Card title */
+.card h3 {
+  margin-top: 0;
+}
+
+/* Card button */
+.card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Welcome to Anjali Yadav's Shopping Site</h1>
+<p>Find the best deals on the latest products</p>
+
+</div>
+
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">Categories</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="main">
+<h1>Featured Products</h1>
+<!-- Add this code inside the header div -->
+<div class="carousel">
+    
+    <img src="https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-07-02/58ccec10-bc03-11ea-acc2-d151811fcc15.png" class="active">
+    <img src="https://th.bing.com/th/id/OIP.DmzDuyxttwhGGE_pVIl59AAAAA?pid=ImgDet&w=460&h=230&rs=1">
+    <img src="https://images.creativemarket.com/0.1.0/ps/3782475/90/60/m2/fpnw/wm0/04_playful_animated_stories_1800x1200-.jpg?1514409348&s=55d12fb307356d0a5e1a0d527ac0843d">
+  </div>
+  
+<div class="card">
+<img src="laptop.jpg" alt="Laptop">
+<h3>Laptop</h3>
+<p>A sleek and powerful laptop for your work and entertainment needs</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<img src="phone.jpg" alt="Phone">
+<h3>Phone</h3>
+<p>A smart and stylish phone with amazing features and performance</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<img src="watch.jpg" alt="Watch">
+<h3>Watch</h3>
+<p>A classy and elegant watch that tells more than time</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<img src="headphones.jpg" alt="Headphones">
+<h3>Headphones</h3>
+<p>A pair of comfortable and noise-canceling headphones for your music enjoyment</p>
+<button>Buy Now</button>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+<p>© 2023 by Anjali Yadav. All rights reserved.</p>
+</div>
+
+</body>
+</html>
